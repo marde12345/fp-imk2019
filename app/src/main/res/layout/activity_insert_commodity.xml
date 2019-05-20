@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_insert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nandurshop.activities.InsertCommodityActivity">
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvVarid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Jenis : "
+        android:layout_below="@id/tvNama"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvPlantedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Planted At: "
+        android:layout_below="@id/tvVarid"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/tvImgurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Img URL: "
+        android:layout_below="@id/tvPlantedad"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edtNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:layout_toRightOf="@+id/tvNama"
+        android:layout_alignBaseline="@+id/tvNama"/>
+    <EditText
+        android:id="@+id/edtVarid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Variety Id"
+        android:layout_toRightOf="@+id/tvVarid"
+        android:layout_alignBaseline="@+id/tvVarid"/>
+    <EditText
+        android:id="@+id/edtPlantedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Planted At"
+        android:layout_toRightOf="@+id/tvPlantedad"
+        android:layout_alignBaseline="@+id/tvPlantedad"/>
+    <EditText
+        android:id="@+id/edImgurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Img URL"
+        android:layout_toRightOf="@+id/tvImgurl"
+        android:layout_alignBaseline="@+id/tvImgurl"/>
+    <LinearLayout
+        android:id="@+id/Linearlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvVarid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btInserting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Linearlayout2"
+            android:text="Insert" />
+        <Button
+            android:id="@+id/btBackGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+    </LinearLayout>
+
+</RelativeLayout>
